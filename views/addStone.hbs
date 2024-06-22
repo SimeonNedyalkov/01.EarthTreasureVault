@@ -1,0 +1,28 @@
+{{#if errors}}
+<div>
+    <div class="errorContainer">
+        {{#each errors}}
+        <p>{{this}}</p>
+        {{/each}}
+    </div>
+</div> 
+{{/if}}
+<main class="create">
+            <!-- Create Page (Only for logged-in users) -->
+            <section id="create">
+                <div class="form">
+                    <h2>Add Stone</h2>
+                    <form class="create-form" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                        <input type="text" name="category" id="category" placeholder="Category" />
+                        <input type="text" name="color" id="color" placeholder="Color" />
+                        <input type="text" name="image" id="stone-img" placeholder="Image" />
+                        <input type="text" name="location" id="location" placeholder="Location" />
+                        <input type="text" name="formula" id="formula" placeholder="Formula" />
+                        <textarea id="description" placeholder="Description..." name="description"></textarea>
+
+                        <button type="submit">Create</button>
+                    </form>
+                </div>
+            </section>
+        </main>

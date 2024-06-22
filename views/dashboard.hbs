@@ -1,0 +1,33 @@
+<main class="dashboard">
+            <section id="dashboard">
+                <h2>Minerals and Gems</h2>
+                <ul class="card-wrapper">
+                {{#each allStones}}
+                
+                    <!-- Display a li with information about every post (if any)-->
+                    
+                    <li class="card">
+                        <img src="{{image}}"/>
+                        <p>
+                            <strong>Name: </strong><span class="name">{{name}}</span>
+                        </p>
+                        <p>
+                            <strong>Category: </strong><span class="category">{{category}}</span>
+                        </p>
+                        <p><strong>Formula:</strong><span class="formula">{{formula}}</span></p>
+                        <a class="details-btn" href="/details/{{_id}}">Details</a>
+                    </li>
+                    
+                
+                {{else}}
+                <div id="no-post">
+                    <h2>There are no gems and minerals! </h2>
+                </div>
+                {{/each}}
+                </ul>
+                <!-- Display an h2 if there are no posts -->
+                <!-- <div id="no-post">
+                    <h2>There are no gems and minerals! </h2>
+                </div> -->
+            </section>
+        </main>
