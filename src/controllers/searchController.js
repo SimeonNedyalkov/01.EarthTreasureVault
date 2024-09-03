@@ -16,8 +16,6 @@ searchRouter.post('/search', async (req, res) => {
     }else{
         res.render('search', { stones });
     }
-    
-    
 });
 
 // Handle GET requests for /search/:id
